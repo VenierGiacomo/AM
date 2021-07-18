@@ -1,0 +1,11 @@
+<ion-header (swiperight)="swipe()">
+    <app-header title="NOTIFICHE" ></app-header>
+</ion-header>
+
+<ion-content (swiperight)="swipe()">
+    <div class="list-item-n" *ngFor='let not of notifications'>
+        <div class="img-cont-n"><img src='{{not.img}}'></div>
+      <div class="text-not"><b>{{not.name}}</b> sent you a challenge request</div>
+    </div>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<div class='confirmation-cont'[style.display]="startChall">
+  <div class='confirmation'>
+    <div class="conf-text">Vuoi sfidare {{this.playerInitial.name}} con {{this.playerChal}}</div>
+      <button class="btn-c darkblue" (click)=' startChall = "none"'>Annulla</button>
+      <button class="btn-c blue" (click)='startchallenge()'>Si</button>
+</div>
+</div>
+<div class="toast-player" [style.display]="toastDisplay">{{toastText}}</div>
+<ion-header>
+  <app-header title="SFIDE" ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="chall-item" *ngFor='let player of playerslist;  index as i' (click)=' challenge(player)'>
+        <div class="chall-img" ><img src='{{player.img}}'></div>
+        <div class="chall-text-top">
+          <div class="player-name" >{{player.name}}</div>
+          
+        </div>
+        <div class="text-bot">
+            <div class="chall-text" >Bet</div>
+            <div class="chall-price" >{{betSize}}</div>
+            <div class="chall-text" >Price</div>
+            <div class="chall-price" >{{ betSize * multiplierArr[i]}}</div>
+         
+      </div>
+    </div>
+</ion-content>

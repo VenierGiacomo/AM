@@ -1,0 +1,124 @@
+<div class='confirmation-cont'[style.display]="startChall">
+  <div class='confirmation'>
+    <div class="conf-text">Do you want to buy this player</div>
+      <button class="btn-c darkblue" (click)=' startChall = "none"'>Cancel</button>
+      <button class="btn-c blue">Yes</button>
+</div>
+</div>
+<ion-header (swipeleft)="swipe()">
+<app-header title="MERCATO" ></app-header>
+</ion-header>
+<ion-content (swiperight)="swipe()">
+<div class="sel-col">
+        <ion-row style="position: sticky; top: 15vh;">
+          <ion-col class='col-top' (click)="swipe()" >
+            PERFORMANCE
+          </ion-col>
+          <ion-col class='col-top active'>
+            STORICO
+          </ion-col>
+          </ion-row>
+      </div>
+      <div class="list-item-h">
+          <div class="img-cont-h"><img src='{{player.img}}'></div>
+        <div class="player-text-h ">{{player.name}}</div>
+        <div class="role"> Ruolo: {{player.role}}</div>
+      </div>
+     <ion-row>
+        <ion-col [class.active]="por" (click)="today()">
+          Settimana
+        </ion-col>
+       <!-- <ion-col [class.active]="def"  (click)="week()">
+         Sett
+        </ion-col>
+        <ion-col [class.active]="cen"  (click)="month()">
+          Mese
+        </ion-col>-->
+        <ion-col [class.active]="att"  (click)="year()">
+          Stagione
+        </ion-col>
+          </ion-row> 
+
+      <!--      <ion-segment [(ngModel)]="selectedView">
+              <ion-segment-button value='today'>
+                <ion-label>Oggi</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value='week'>
+                <ion-label>Settimana</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value='month'>
+                  <ion-label>Mese</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value='year'>
+                    <ion-label>Anno</ion-label>
+                  </ion-segment-button>
+            </ion-segment>-->
+<div [ngSwitch]="selectedView">
+  <div *ngSwitchCase="'today'">
+    <div class="chart-cont">
+      <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="dayData"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [autoScale]="autoScale"
+        [maxYAxisTickLength]='maxYAxisTickLength'
+        (select)="onSelect($event)">
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+   <!-- <div *ngSwitchCase="'week'">
+      <div class="chart-cont">
+        <ngx-charts-line-chart
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="weekData"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [autoScale]="autoScale"
+          [maxYAxisTickLength]='maxYAxisTickLength'
+          (select)="onSelect($event)">
+        </ngx-charts-line-chart>
+      </div>
+    </div>
+<div *ngSwitchCase="'month'">
+    <div class="chart-cont">
+      <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="monthData"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [autoScale]="autoScale"
+        [maxYAxisTickLength]='maxYAxisTickLength'
+        (select)="onSelect($event)">
+      </ngx-charts-line-chart>
+    </div>
+  </div>-->
+<div *ngSwitchCase="'year'">
+    <div class="chart-cont">
+      <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="yearData"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [autoScale]="autoScale"
+        [maxYAxisTickLength]='maxYAxisTickLength'
+        (select)="onSelect($event)">
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+</div>
+<div class="buy"><p>Compra ora</p></div>
+      <div class="medium-circle" (click)=' startChall = "block"' ><img src='../assets/img/plus-symbol.svg'> </div>
+</ion-content>

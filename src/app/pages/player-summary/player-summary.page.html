@@ -1,0 +1,39 @@
+<div class='confirmation-cont'[style.display]="startChall">
+    <div class='confirmation'>
+      <div class="conf-text">Vuoi comprare questo giocatore?</div>
+        <button class="btn-c darkblue" (click)=' startChall = "none"'>Annulla</button>
+        <button class="btn-c blue" (click)='buy()'>Si</button>
+</div>
+</div>
+<div class="toast-player" [style.display]="toastDisplay">{{toastText}}</div>
+<ion-header (swipeleft)="swipe()">
+  <app-header title="MERCATO" ></app-header>
+</ion-header>
+<ion-content (swipeleft)="swipe()">
+<div class="sel-col">
+          <ion-row style="position: sticky; top: 15vh;">
+            <ion-col class='col-top active' >
+              PERFORMANCE
+            </ion-col>
+            <ion-col class='col-top' (click)="swipe()">
+              STORICO
+            </ion-col>
+            </ion-row>
+        </div>
+        <div class="list-item-s">
+            <div class="img-cont-s"><img src='{{player.img}}'></div>
+          <div class="player-text-s ">{{player.name}}</div>
+          <div class="role"> Ruolo: {{player.role}}</div>
+        </div>
+        
+        
+    <div class="big-circle-cont">
+        <div class="big-circle"><div><p class="number-bg">{{player.grades[player.grades.length-1]}}</p><p>Voto</p></div></div>
+        <div class="big-circle"><div><p class="number-bg">33</p><p>assist</p></div></div>
+      </div>
+      <div class="buy"><p>Compra ora</p></div>
+      <div class="medium-circle" (click)=' startChall = "block"' ><img src='../assets/img/plus-symbol.svg'> </div>
+
+<div class="price"><p>Price: {{player.price}}€ </p></div>  
+
+</ion-content>

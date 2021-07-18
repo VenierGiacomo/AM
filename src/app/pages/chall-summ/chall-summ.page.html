@@ -1,0 +1,17 @@
+<ion-header>
+    <app-header title="SFIDE" ></app-header>
+</ion-header>
+
+<ion-content >
+  <div class="title-sum">Prossime Sfide</div>
+    <div class="list-item-n" *ngFor='let chall of challelements'>
+        <div class="img-cont-n left"><img src='{{chall.own_img}}'></div>
+        <div class="img-cont-n right"><img src='{{chall.opp_img}}'></div>
+      <div class="text-not"><b>{{chall.name}}</b><br> Possibile vincità <b>€{{chall.possWin}}</b> </div>
+      
+    </div>
+    <div class="list-item-n new-chal" (click)='nagivateChall()'>
+        <img src='../assets/img/plus-symbol.svg'>
+      <div><b>Inizia una nuova sfida</b></div>
+    </div>
+</ion-content>

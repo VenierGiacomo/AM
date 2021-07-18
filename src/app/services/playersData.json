@@ -1,0 +1,205 @@
+
+{
+    "league": "serieA",
+    "teams":[
+            {
+            "team": "Milan",
+            "players": [
+                {
+                "name": "Davide Calabria",
+                "role": "DF",
+                "img": "https://pbs.twimg.com/profile_images/1101083880797454341/5kaY2DtC_400x400.jpg",
+                "grades":[6.9, 5.9, 5.5],
+                "price": 10000,
+                "value": 6 
+                },
+                
+                {
+                "name": "Ismaël Bennacer",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/1152357541483044864/pUfwoC8U_400x400.jpg",
+                "grades": [6.0, 6.4],
+                "price": 10000,
+                "value":8 
+                },
+                {
+                "name": "Giacomo Bonaventura",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/1122580811168067585/B6C3txEp_400x400.jpg",
+                "grades":[6.9],
+                "price": 10000,
+                "value":13
+                },
+                {
+                "name": "Samu Castillejo",
+                "role": "FW",
+                "img": "https://pbs.twimg.com/media/EBeIx3FXUAIpmZp?format=jpg&name=900x900",
+                "grades": ["/"],
+                "price": 10000,
+                "value":8 
+                },
+                {
+                "name": "Suso",
+                "role": "FW",
+                "img": "https://sm.imgix.net/18/44/suso.jpg?w=640&h=480&auto=compress,format&fit=clip",
+                "grades":[6.6, 6.6, 7.3, 7.3, 7.5],
+                "price": 10000,
+                "value":16 
+                },
+                {
+                "name": "Krzysztof Piątek",
+                "role": "FW",
+                "img": "https://pbs.twimg.com/media/EEiX5UkWkAEX8nl?format=jpg&name=large",
+                "grades":[6.4, 6.2, 6.7, 6.8],
+                "price": 10000,
+                "value":32
+                },
+                {
+                "name": "Hakan Çalhanoğlu",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/1029006946140147712/9CmfA5xg_400x400.jpg",
+                "grades":[6.5, 6.0, 7.1, 6.4, 9.5],
+                "price": 10000,
+                "value":15 
+                },
+                {
+                "name": "Fabio Borini",
+                "role": "FW",
+                "img": "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/19511206_10154714482620963_3823078169941263260_n.jpg?_nc_cat=101&_nc_oc=AQlSU164S_0TYx8o_Z7_Pq6yX3_a7OgMAL3hR9qLesLPwUKQ6aOveqP8cEkuaOdxnJyHs4RhldTO0O9-YPf4wRUr&_nc_ht=scontent-mxp1-1.xx&oh=4450bdd8094faf5df5438e2505a28145&oe=5E1B59FB",
+                "grades": ["/"],
+                "price": 10000,
+                "value": 3 
+                },
+                {
+                "name": "Andrea Conti",
+                "role": "DF",
+                "img": "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/21151189_113587369318575_4426244070371176147_n.jpg?_nc_cat=106&_nc_oc=AQmCMwQ6nxdioKMT7PDWC5UUHYf6bikirjS4NmOHg--GI6xsLGh283czuXV0FJD6Sgqkp0xuu7He-1veKjYTW0W8&_nc_ht=scontent-mxp1-1.xx&oh=85a4e45612b5400fb575c18c575982e0&oe=5E4ED2F0",
+                "grades": [6.6, 6.1],
+                "price": 10000,
+                "value":3
+                },
+                {
+                "name": "Alessio Romagnoli",
+                "role": "DF",
+                "img": "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/67727924_901884223501522_3437011067107016704_o.jpg?_nc_cat=105&_nc_oc=AQmU2If-yJ1FIa1ZCVA-QhUhSZd6F-1zeb7FsE3LKy1UMtoyTXBPzvWEj79WYYNFjKuts7vrXb8yRWofz1YOyZi-&_nc_ht=scontent-mxp1-1.xx&oh=3456fb70ad0ff94f13b1382739be7aea&oe=5E5AE2A9",
+                "grades": [6.4, 7.3, 6.7, 6.9, 7.4],
+                "price": 10000,
+                "value":12 
+                },
+                {
+                "name": "Rafael Leão",
+                "role": "FW",
+                "img": "https://pbs.twimg.com/media/EICjRVcWsAIM1wy?format=jpg&name=large",
+                "grades":[6.9, 8.0, 7.2, 7.0],
+                "price": 10000,
+                "value":20 
+                },
+                {
+                "name": "Ante Rebić",
+                "role": "FW",
+                "img": "https://immagini.quotidiano.net/?url=http%3A%2F%2Fp1014p.quotidiano.net%3A80%2Fpolopoly_fs%2F1.4799961.1569347284%21%2FhttpImage%2Fimage.jpg_gen%2Fderivatives%2Fwidescreen%2Fimage.jpg&h=368",
+                "grades": ["/"],
+                "price": 10000,
+                "value":16 
+                },
+                {
+                "name": "Theo Hernandez",
+                "role": "DF",
+                "img": "https://pbs.twimg.com/profile_images/1147842957216755712/Lw5CONdE_200x200.jpg",
+                "grades":[6.9, 6.3, 7.5, 7.1],
+                "price": 10000,
+                "value":10 
+                },
+                {
+                "name": "Lucas Biglia",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/905845865822203905/hQaBIbsA_400x400.jpg",
+                "grades":[7.0, 6.9, 6.7],
+                "price": 10000,
+                "value":6 
+                },
+                {
+                "name": "Mateo Musacchio",
+                "role": "DF",
+                "img": "https://pbs.twimg.com/profile_images/913555192213368834/2f2ksxAK_400x400.jpg",
+                "grades":[7.1, 5.9, 6.3, 6.6],
+                "price": 10000,
+                "value":5 
+                },
+                {
+                "name": "Pepe Reina",
+                "role": "GK",
+                "img": "https://pbs.twimg.com/profile_images/1122034042109661185/LhVQjN4O_400x400.jpg",
+                "grades":[7.0],
+                "price": 10000,
+                "value": 3
+                },
+                {
+                "name": "Mattia Caldara",
+                "role": "DF",
+                "img": "https://pbs.twimg.com/profile_images/1025679468449415168/piwqKg4m_400x400.jpg",
+                "grades": ["/"],
+                "price": 10000,
+                "value":3 
+                },
+                {
+                "name": "Rade Krunić",
+                "role": "MF",
+                "img": "https://mdp-media.acmilan.com/upl/entities/player/Players-19-20-Krunic.png",
+                "grades": ["/"],
+                "price": 10000,
+                "value":10 
+                },
+                {
+                "name": "Lucas Paquetá",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/966055038329278464/FIyssOgo_400x400.jpg",
+                "grades":[6.8],
+                "price": 10000,
+                "value":12 
+                },
+                {
+                "name": "Léo Duarte",
+                "role": "DF",
+                "img": "https://pbs.twimg.com/profile_banners/1001506641953656832/1565192467/1500x500",
+                "grades":[6.9],
+                "price": 10000,
+                "value":7 
+                },
+                {
+                "name": "Ricardo Rodríguez",
+                "role": "DF",
+                "img": "http://foto.sportal.it/2017-41/ricardo-rodriguez-milan_1105024Libero1.jpg",
+                "grades": [6.6],
+                "price": 10000,
+                "value": 6 
+                },
+                {
+                "name": "Franck Kessié",
+                "role": "MF",
+                "img": "https://pbs.twimg.com/profile_images/888324649888698368/rpgUqRDK_400x400.jpg",
+                "grades":[6.3, 6.7, 6.5, 6.9, 7.1],
+                "price": 10000
+                ,
+                "value":10 
+                },
+                {
+                "name": "Antonio Donnarumma",
+                "role": "GK",
+                "img": "https://www.milanlive.it/wp-content/uploads/2017/12/antonio-donnarumma-1.jpg",
+                "grades": ["/"],
+                "price": 10000,
+                "value":1
+                },
+                {
+                "name": "Gianluigi Donnarumma",
+                "role": "GK",
+                "img": "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/70195274_2733917423285346_397009876145930240_o.jpg?_nc_cat=102&_nc_oc=AQl0lpAz7uqqad3jQNGBZKAKI5UpfLqAeyoaAxEe2JOAKIjbePdy-uhn0RYDyF1vm1M&_nc_ht=scontent-mxp1-1.xx&oh=de5bdbc49a274ad1479112a78e616c99&oe=5E3A3A20",
+                "grades": [7.0, 6.7, 6.3, 7.1],
+                "price": 10000,
+                "value":14
+                }
+            ]
+        }
+    ]
+}

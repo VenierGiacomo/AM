@@ -1,0 +1,16 @@
+
+<app-menu></app-menu>
+<ion-header (swipeleft)="notifications()">
+      <ion-menu-toggle class="img-prof" slot="start"><img src='{{photo}}'  ></ion-menu-toggle>
+    <ion-title><img src='../assets/img/logo.svg' class="img-logo" (click)='logout()'></ion-title>
+    <div class="money" (click)='notifications()'> <p>{{wallet}}</p> <img src='../assets/img/money.svg' class="money"> </div>
+</ion-header>
+
+<ion-content (swipeleft)="notifications()">
+        <div class='home-el'style= 'background: url("../assets/img/alec-moore-rbANExeyApc-unsplash.png") no-repeat; background-size: cover; background-position: center;' (click)="goChallSumm()"><p>Sfide<br> del momento</p></div>
+    <div class='home-el' style='background: url("../assets/img/waldemar-brandt-iiwYpGkbDgM-unsplash.png") no-repeat; background-size: cover; background-position: center;' (click)='goLogin()'><p>Riepilogo<br>Settimana</p></div>
+    <div class='home-el'style= 'background: url("../assets/img/src_assets_images_audience.png") no-repeat; background-size: cover; background-position: center;' (click)='logout()'><p>Giocatori<br>della<br>settimana</p></div>
+    
+</ion-content>
+
+

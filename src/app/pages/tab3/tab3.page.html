@@ -1,0 +1,27 @@
+
+<app-menu></app-menu>
+<ion-header (swipeleft)="swipe()">
+      <ion-menu-toggle class="img-prof" slot="start"><img src='{{user.img}}'></ion-menu-toggle>
+     <ion-title> SFIDE </ion-title>
+    <div class="money" (click)='notifications()'> <p>{{user.wallet}}</p> <img src='../assets/img/money.svg' class="money"> </div>
+</ion-header>
+<ion-content (swipeleft)="swipe()">
+    <div class="dark-cont-lf" [style.width.vw]="slidet/1000"></div>
+    <div class="dark-cont-rg" [style.width.vw]="slideb1/1000"></div>
+    <div class="slidecontainer-top">
+    <input type="range" min="1" max="99999" [value]="slidet"  (input)="changeslidet($event)" class="slidercss">
+    </div>
+    <div class="line"  *ngFor='let price of price$' [style.height.vh]="price.height"></div>   
+    <div class="slidecontainer-bottom">
+        <input type="range" min="1" max="99999" [value]="slideb"  (input)="changeslideb($event)" class="slidercss">
+    </div>
+    <div class="bottom-prices">
+        <p class="pricetext">Seleziona il range</p>
+        <div class="contprice"><p class="min-maxtext">min</p></div>
+        <div class="contprice"><p class="moneytext">{{slidet}}$</p></div>
+        <div class="contprice"><p class="min-maxtext">max</p></div>
+        <div class="contprice"><p class="moneytext">{{slideb}}$</p></div>
+        <button class="botprice" (click)="goTo()">OK</button>
+    </div>
+
+</ion-content>

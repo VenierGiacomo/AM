@@ -1,0 +1,84 @@
+
+<app-menu></app-menu>
+<ion-header (swipeleft)="swipe()">
+      <ion-menu-toggle class="img-prof" slot="start"><img src='{{user.img}}'></ion-menu-toggle>
+    <ion-title>MERCATO</ion-title>
+    <div class="money" (click)='notifications()'> <p>{{user.wallet}}</p> <img src='../assets/img/money.svg' class="money"> </div>
+</ion-header>
+<ion-content (swipeleft)="swipe()" > 
+    <div  class="sel-col">
+  <ion-row>
+    <ion-col  class='col-top active' (click)='ddd()'>
+      ACQUISTA
+    </ion-col>
+    <ion-col class='col-top' routerLink="/tabs/market/sell"  routerDirection="root" >
+      VENDI
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col [class.active]="por" (click)="port()">
+        Por
+      </ion-col>
+      <ion-col [class.active]="def" (click)="deff()">
+        Dif
+      </ion-col>
+      <ion-col [class.active]="cen" (click)="cent()">
+        Cen
+      </ion-col>
+      <ion-col [class.active]="att" (click)="atta()">
+        Att
+      </ion-col>
+    </ion-row>
+  </div>
+<div style="display: block; position: relative;" [ngSwitch]="selectedView">
+  <div *ngSwitchCase="'GK'">
+    <div class="chall-item" *ngFor='let player of GKers' (click)='goSummary(player)'>
+      <div class="chall-img" ><img src='{{player.img}}'></div>
+      <div class="chall-text-top">
+        <div class="player-name" >{{player.name}}</div>
+        
+      </div>
+        <div class="chall-text" >Team</div>
+        <div class="team-name" >{{player.team}}</div>
+    </div>
+    </div>
+
+    <div *ngSwitchCase="'DF'">
+      <div class="chall-item" *ngFor='let player of DFers' (click)='goSummary(player)'>
+        <div class="chall-img" ><img src='{{player.img}}'></div>
+        <div class="chall-text-top">
+          <div class="player-name" >{{player.name}}</div>
+          
+        </div>
+          <div class="chall-text" >Team</div>
+          <div class="team-name" >{{player.team}}</div>
+      </div>
+      </div>
+  <div *ngSwitchCase="'MF'">
+      <div class="chall-item" *ngFor='let player of MFers' (click)='goSummary(player)'>
+        <div class="chall-img" ><img src='{{player.img}}'></div>
+        <div class="chall-text-top">
+          <div class="player-name" >{{player.name}}</div>
+          
+        </div>
+          <div class="chall-text" >Team</div>
+          <div class="team-name" >{{player.team}}</div>
+      </div>
+    </div>
+  <div *ngSwitchCase="'FW'">
+    <div class="chall-item" *ngFor='let player of FWers' (click)='goSummary(player)'>
+      <div class="chall-img" ><img src='{{player.img}}'></div>
+      <div class="chall-text-top">
+        <div class="player-name" >{{player.name}}</div>
+        
+      </div>
+        <div class="chall-text" >Team</div>
+        <div class="team-name" >{{player.team}}</div>
+    </div>
+  </div>
+
+    
+    
+    </div>  
+</ion-content>
+

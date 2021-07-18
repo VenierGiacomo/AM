@@ -1,0 +1,101 @@
+<ion-header>
+    <app-header title="SFIDE" ></app-header>
+</ion-header>
+
+<ion-content> 
+        <div  class="sel-col">
+        <ion-row>
+                <ion-col [class.active]="att" (click)="atta()">
+                Att
+                </ion-col>
+                <ion-col [class.active]="cen" (click)="cent()">
+                Cen
+                </ion-col>
+                <ion-col [class.active]="def" (click)="deff()">
+                Dif
+                </ion-col>
+                <ion-col [class.active]="por" (click)="port()">
+                  Por
+                </ion-col>
+              </ion-row>
+            </div>
+          <div style="display: block; position: relative;" [ngSwitch]="selectedView">
+            <div *ngSwitchCase="'GK'">
+                <ion-refresher slot="fixed" (ionRefresh)="doRefreshGK($event)">
+                    <ion-refresher-content></ion-refresher-content>
+                  </ion-refresher> 
+                  <div class="chall-item" *ngFor='let player of GKers;  index as i' (click)='goChall(player, i)'>
+                    <div class="chall-img" ><img src='{{player.img}}'></div>
+                    <div class="chall-text-top">
+                      <div class="player-name" >{{player.name}}</div>
+                      
+                    </div>
+                    <div class="text-bot">
+                        <div class="chall-text" >Bet</div>
+                        <div class="chall-price" >{{bets[i]}}</div>
+                        <div class="chall-text" >Team</div>
+                        <div class="chall-price" >{{player.team}}</div>
+                     
+                  </div>
+                  </div>
+              
+                </div>
+              <div *ngSwitchCase="'DF'">
+                  <ion-refresher slot="fixed" (ionRefresh)="doRefreshDF($event)">
+                      <ion-refresher-content></ion-refresher-content>
+                    </ion-refresher>
+                    <div class="chall-item" *ngFor='let player of DFers;  index as i' (click)='goChall(player, i)'>
+                      <div class="chall-img" ><img src='{{player.img}}'></div>
+                      <div class="chall-text-top">
+                        <div class="player-name" >{{player.name}}</div>
+                        
+                      </div>
+                      <div class="text-bot">
+                          <div class="chall-text" >Bet</div>
+                          <div class="chall-price" >{{bets[i]}}</div>
+                          <div class="chall-text" >Team</div>
+                          <div class="chall-price" >{{player.team}}</div>
+                       
+                    </div>
+              </div>
+            </div>
+           
+            <div *ngSwitchCase="'MF'">
+                <ion-refresher slot="fixed" (ionRefresh)="doRefreshMF($event)">
+                    <ion-refresher-content></ion-refresher-content>
+                  </ion-refresher>
+                  <div class="chall-item" *ngFor='let player of MFers;  index as i' (click)='goChall(player, i)'>
+                      <div class="chall-img" ><img src='{{player.img}}'></div>
+                      <div class="chall-text-top">
+                        <div class="player-name" >{{player.name}}</div>
+                        
+                      </div>
+                      <div class="text-bot">
+                          <div class="chall-text" >Bet</div>
+                          <div class="chall-price" >{{bets[i]}}</div>
+                          <div class="chall-text" >Team</div>
+                          <div class="chall-price" >{{player.team}}</div>
+              </div>
+                       
+                    </div>
+              </div>
+            <div *ngSwitchCase="'FW'">
+              <ion-refresher slot="fixed" (ionRefresh)="doRefreshFW($event)">
+              <ion-refresher-content></ion-refresher-content>
+            </ion-refresher>
+              <div class="chall-item" *ngFor='let player of FWers;  index as i' (click)='goChall(player, i)'>
+                <div class="chall-img" ><img src='{{player.img}}'></div>
+                    <div class="chall-text-top">
+                      <div class="player-name" >{{player.name}}</div>
+                      
+                    </div>
+                    <div class="text-bot">
+                        <div class="chall-text" >Bet</div>
+                        <div class="chall-price" >{{bets[i]}}</div>
+                        <div class="chall-text" >Team</div>
+                        <div class="chall-price" >{{player.team}}</div>                  
+                  </div>
+            </div> 
+        </div>
+      </div>
+          </ion-content>

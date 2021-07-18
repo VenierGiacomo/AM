@@ -1,0 +1,7 @@
+{
+  "name": "AMnative",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
